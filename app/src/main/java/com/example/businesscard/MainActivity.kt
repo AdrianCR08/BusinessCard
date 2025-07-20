@@ -25,6 +25,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -52,8 +53,8 @@ class MainActivity : ComponentActivity() {
 fun BusinessCard(modifier: Modifier = Modifier) {
     CardElements(
         profilePic = painterResource(R.drawable.android_logo),
-        fullName = "Adrian Correa Ramos",
-        title = "Mobile App Developer",
+        fullName = stringResource(R.string.full_name),
+        title = stringResource(R.string.title),
     )
 }
 
@@ -99,7 +100,7 @@ private fun CardElements(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             MediaCards(
-                infoText = "+52 712 234 7473",
+                infoText = stringResource(R.string.phone_number),
                 icon = painterResource(R.drawable.baseline_contact_phone_24),
                 onClick = {
                     val intent = Intent(Intent.ACTION_DIAL).apply {
@@ -109,7 +110,7 @@ private fun CardElements(
                 }
             )
             MediaCards(
-                infoText = "AdrianCR08",
+                infoText = stringResource(R.string.github_user_name),
                 icon = painterResource(R.drawable.outline_folder_code_24),
                 onClick = {
                     val intent =
@@ -118,7 +119,7 @@ private fun CardElements(
                 }
             )
             MediaCards(
-                infoText = "adrianrmz917@gmail.com",
+                infoText = stringResource(R.string.email_address),
                 icon = painterResource(R.drawable.outline_mail_24),
                 onClick = {
                     val intent = Intent(Intent.ACTION_SENDTO).apply {

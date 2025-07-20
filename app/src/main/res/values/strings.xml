@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BusinessCard</string>
+    <string name="full_name">Adrian Correa Ramos</string>
+    <string name="title">Mobile App Developer</string>
+    <string name="phone_number">+52 712 234 7473</string>
+    <string name="github_user_name">AdrianCR08</string>
+    <string name="email_address">adrianrmz917@gmail.com</string>
 </resources>
